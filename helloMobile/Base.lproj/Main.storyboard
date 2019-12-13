@@ -56,6 +56,7 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyU-tI-UUl">
                                                 <rect key="frame" x="124" y="171" width="127" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="I0L-0T-R7m"/>
                                                     <constraint firstAttribute="width" constant="127" id="NlG-s3-N3e"/>
@@ -63,6 +64,7 @@
                                                 <state key="normal" title="Draw random fact!"/>
                                                 <connections>
                                                     <action selector="ButtonSubmitted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Bt-0S-d6A"/>
+                                                    <action selector="SubmitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Km-3A-c3f"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -108,6 +110,7 @@
                         <outlet property="InputField" destination="qKn-ed-JVE" id="HJ9-hD-Sby"/>
                         <outlet property="InsideScrollView" destination="OJV-qo-KpM" id="MS7-X2-yjr"/>
                         <outlet property="ScrollView" destination="v4M-Kj-nGP" id="Lq9-f6-TbD"/>
+                        <outlet property="SubmitButton" destination="KyU-tI-UUl" id="JeM-ZP-0i8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
