@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (4.0.1)
+  - PullToRefreshKit (0.8.8)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0.0)
+  - PullToRefreshKit
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - PullToRefreshKit
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  PullToRefreshKit: 7cc53e720e69f135cffa1a57784dfb534f0222ab
 
-PODFILE CHECKSUM: c0305218a07c826da157058a706ba86ab5793420
+PODFILE CHECKSUM: 80110fe8aa298186b7906e73d3ffdc008db6a91c
 
 COCOAPODS: 1.8.4

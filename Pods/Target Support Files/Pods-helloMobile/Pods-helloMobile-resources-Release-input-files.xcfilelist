@@ -1,0 +1,12 @@
+${PODS_ROOT}/Target Support Files/Pods-helloMobile/Pods-helloMobile-resources.sh
+${PODS_ROOT}/PullToRefreshKit/Source/Assets/arrow_down@3x.png
+${PODS_ROOT}/PullToRefreshKit/Source/Assets/arrow_left@3x.png
+${PODS_ROOT}/PullToRefreshKit/Source/Assets/arrow_right@3x.png
+${PODS_ROOT}/PullToRefreshKit/Source/Assets/Base.lproj/Localize.strings
+${PODS_ROOT}/PullToRefreshKit/Source/Assets/en.lproj/Localize.strings
+${PODS_ROOT}/PullToRefreshKit/Source/Assets/failure@3x.png
+${PODS_ROOT}/PullToRefreshKit/Source/Assets/success@3x.png
+${PODS_ROOT}/PullToRefreshKit/Source/Assets/zh-Hans.lproj/Localize.strings
+${PODS_ROOT}/PullToRefreshKit/Source/Assets/Base.lproj
+${PODS_ROOT}/PullToRefreshKit/Source/Assets/en.lproj
+${PODS_ROOT}/PullToRefreshKit/Source/Assets/zh-Hans.lproj

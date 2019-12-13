@@ -13,7 +13,7 @@
 		651F492723A274B800B20A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651F492623A274B800B20A7A /* Assets.xcassets */; };
 		651F492A23A274B800B20A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651F492823A274B800B20A7A /* LaunchScreen.storyboard */; };
 		651F493523A274B800B20A7A /* helloMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F493423A274B800B20A7A /* helloMobileTests.swift */; };
-		D9B70B2490DFAFA994BF91BB /* libPods-helloMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4D03FDE931194932169085 /* libPods-helloMobile.a */; };
+		862041ADBC09E666E41A6141 /* libPods-helloMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C73D71C16DA0600DC1D4EE30 /* libPods-helloMobile.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		651F493023A274B800B20A7A /* helloMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		651F493423A274B800B20A7A /* helloMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloMobileTests.swift; sourceTree = "<group>"; };
 		651F493623A274B800B20A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F4D03FDE931194932169085 /* libPods-helloMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-helloMobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C73D71C16DA0600DC1D4EE30 /* libPods-helloMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-helloMobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9B70B2490DFAFA994BF91BB /* libPods-helloMobile.a in Frameworks */,
+				862041ADBC09E666E41A6141 /* libPods-helloMobile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +116,7 @@
 		C12CD5EBAD188B1F8532B4F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9F4D03FDE931194932169085 /* libPods-helloMobile.a */,
+				C73D71C16DA0600DC1D4EE30 /* libPods-helloMobile.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +132,7 @@
 				651F491823A274B700B20A7A /* Sources */,
 				651F491923A274B700B20A7A /* Frameworks */,
 				651F491A23A274B700B20A7A /* Resources */,
+				D49C7E1978DE644AFE809752 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +220,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		D49C7E1978DE644AFE809752 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-helloMobile/Pods-helloMobile-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-helloMobile/Pods-helloMobile-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-helloMobile/Pods-helloMobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F24A86D4172360F66CEF4ED9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

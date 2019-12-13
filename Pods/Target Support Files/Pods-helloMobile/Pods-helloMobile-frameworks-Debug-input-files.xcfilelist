@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-helloMobile/Pods-helloMobile-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SwiftPullToRefresh/SwiftPullToRefresh.framework

@@ -8,14 +8,21 @@
 
 import UIKit
 import Alamofire
+import PullToRefreshKit
+import Foundation
 
 class ViewController: UIViewController {
+    @IBOutlet weak var ScrollView: UIScrollView!
     @IBOutlet weak var InputField: UITextField!
     
     @IBOutlet weak var FactLabel: UILabel!
     
     @IBOutlet weak var FactText: UITextView!
     @IBAction func ButtonSubmitted(_ sender: Any) {
+        refreshFacts()
+    }
+    
+    func refreshFacts() {
         print("making request...")
         
         if let inputtedNumber = InputField.text {
@@ -33,7 +40,19 @@ class ViewController: UIViewController {
         }
     }
     
+    func delay(_ delay:Double, closure:@escaping ()->()) {
+        DispatchQueue.main.asyncAfter(
+            deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
+    }
+    
     override func viewDidLoad() {
+        
+        ScrollView.configRefreshHeader(container:self) { [weak self] in
+            self?.delay(2, closure: {
+                self?.ScrollView.switchRefreshHeader(to: .normal(.success, 0.5))
+            })
+        }
+        
     
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib
