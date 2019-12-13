@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.0.1)
+  - Pastel (0.6.0)
   - PullToRefreshKit (0.8.8)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0.0)
+  - Pastel
   - PullToRefreshKit
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Pastel
     - PullToRefreshKit
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Pastel: 814f081efbe2859c37e65ee44f396e6e5be88619
   PullToRefreshKit: 7cc53e720e69f135cffa1a57784dfb534f0222ab
 
-PODFILE CHECKSUM: 80110fe8aa298186b7906e73d3ffdc008db6a91c
+PODFILE CHECKSUM: 2380c74d3c44cf3b0753fb22e843f1a7e0f01079
 
 COCOAPODS: 1.8.4

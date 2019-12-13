@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import PullToRefreshKit
 import Foundation
+import Pastel
 
 class ViewController: UIViewController {
     @IBOutlet weak var ScrollView: UIScrollView!
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var FactLabel: UILabel!
     
+    @IBOutlet weak var InsideScrollView: UIView!
     @IBOutlet weak var FactText: UITextView!
     @IBAction func ButtonSubmitted(_ sender: Any) {
         refreshFacts()
@@ -46,6 +48,8 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
         
         ScrollView.configRefreshHeader(container:self) { [weak self] in
             self?.refreshFacts()
@@ -57,9 +61,25 @@ class ViewController: UIViewController {
         
         refreshFacts()
         
+        let pastelView = PastelView(frame: InsideScrollView.bounds)
         
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib
+        // Custom Direction
+        pastelView.startPastelPoint = .bottomLeft
+        pastelView.endPastelPoint = .topRight
+        
+        // Custom Duration
+        pastelView.animationDuration = 3.0
+        
+        // Custom Color
+        pastelView.setColors([
+            UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1.0),
+                              UIColor(red: 123/255, green: 31/255, blue: 162/255, alpha: 1.0),
+                              UIColor(red: 90/255, green: 120/255, blue: 127/255, alpha: 1.0),
+                              UIColor(red: 58/255, green: 255/255, blue: 217/255, alpha: 1.0)
+            ])
+        
+        pastelView.startAnimation()
+        InsideScrollView.insertSubview(pastelView, at: 0)
     }
 }
 
