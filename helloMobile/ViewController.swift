@@ -26,10 +26,10 @@ class ViewController: UIViewController {
         print("making request...")
         
         if let inputtedNumber = InputField.text {
-            print("http://numbersapi.com/\(inputtedNumber)/math")
+            print("http://numbersapi.com/\(inputtedNumber)")
             
             
-            Alamofire.request("http://numbersapi.com/\(inputtedNumber)/math").response { response in
+            Alamofire.request("http://numbersapi.com/\(inputtedNumber)").response { response in
                 print(response.response)
                 
                 if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
@@ -48,14 +48,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         ScrollView.configRefreshHeader(container:self) { [weak self] in
-            self?.delay(2, closure: {
+            self?.refreshFacts()
+            
+            self?.delay(1, closure: {
                 self?.ScrollView.switchRefreshHeader(to: .normal(.success, 0.5))
             })
         }
         
-    
+        refreshFacts()
+        
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib
-}
+    }
 }
 
