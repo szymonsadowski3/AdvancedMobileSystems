@@ -13,6 +13,7 @@
 		651F492723A274B800B20A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651F492623A274B800B20A7A /* Assets.xcassets */; };
 		651F492A23A274B800B20A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651F492823A274B800B20A7A /* LaunchScreen.storyboard */; };
 		651F493523A274B800B20A7A /* helloMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651F493423A274B800B20A7A /* helloMobileTests.swift */; };
+		D9B70B2490DFAFA994BF91BB /* libPods-helloMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4D03FDE931194932169085 /* libPods-helloMobile.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21DB1396DF121340CC8E1689 /* Pods-helloMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloMobile.release.xcconfig"; path = "Target Support Files/Pods-helloMobile/Pods-helloMobile.release.xcconfig"; sourceTree = "<group>"; };
+		26AE41B5A2BF020939F8F0D3 /* Pods-helloMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloMobile.debug.xcconfig"; path = "Target Support Files/Pods-helloMobile/Pods-helloMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		651F491C23A274B700B20A7A /* helloMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		651F491F23A274B700B20A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		651F492123A274B700B20A7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		651F493023A274B800B20A7A /* helloMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		651F493423A274B800B20A7A /* helloMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloMobileTests.swift; sourceTree = "<group>"; };
 		651F493623A274B800B20A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4D03FDE931194932169085 /* libPods-helloMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-helloMobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B70B2490DFAFA994BF91BB /* libPods-helloMobile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21A415F086E3F461F38E2846 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26AE41B5A2BF020939F8F0D3 /* Pods-helloMobile.debug.xcconfig */,
+				21DB1396DF121340CC8E1689 /* Pods-helloMobile.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		651F491323A274B700B20A7A = {
 			isa = PBXGroup;
 			children = (
 				651F491E23A274B700B20A7A /* helloMobile */,
 				651F493323A274B800B20A7A /* helloMobileTests */,
 				651F491D23A274B700B20A7A /* Products */,
+				21A415F086E3F461F38E2846 /* Pods */,
+				C12CD5EBAD188B1F8532B4F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +113,14 @@
 			path = helloMobileTests;
 			sourceTree = "<group>";
 		};
+		C12CD5EBAD188B1F8532B4F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F4D03FDE931194932169085 /* libPods-helloMobile.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +128,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 651F493923A274B800B20A7A /* Build configuration list for PBXNativeTarget "helloMobile" */;
 			buildPhases = (
+				F24A86D4172360F66CEF4ED9 /* [CP] Check Pods Manifest.lock */,
 				651F491823A274B700B20A7A /* Sources */,
 				651F491923A274B700B20A7A /* Frameworks */,
 				651F491A23A274B700B20A7A /* Resources */,
@@ -191,6 +217,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F24A86D4172360F66CEF4ED9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-helloMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		651F491823A274B700B20A7A /* Sources */ = {
@@ -358,6 +409,7 @@
 		};
 		651F493A23A274B800B20A7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26AE41B5A2BF020939F8F0D3 /* Pods-helloMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +427,7 @@
 		};
 		651F493B23A274B800B20A7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21DB1396DF121340CC8E1689 /* Pods-helloMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
