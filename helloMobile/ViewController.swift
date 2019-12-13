@@ -12,7 +12,7 @@ import PullToRefreshKit
 import Foundation
 import Pastel
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var ScrollView: UIScrollView!
     @IBOutlet weak var InputField: UITextField!
     
@@ -22,6 +22,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var FactText: UITextView!
     @IBAction func ButtonSubmitted(_ sender: Any) {
         refreshFacts()
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        //For mobile numer validation
+        if textField == InputField {
+            let allowedCharacters = CharacterSet(charactersIn:"0123456789 ")//Here change this characters based on your requirement
+            let characterSet = CharacterSet(charactersIn: string)
+            return allowedCharacters.isSuperset(of: characterSet)
+        }
+        return true
     }
     
     func refreshFacts() {
@@ -50,7 +60,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        InputField.delegate = self;
         ScrollView.configRefreshHeader(container:self) { [weak self] in
             self?.refreshFacts()
             
